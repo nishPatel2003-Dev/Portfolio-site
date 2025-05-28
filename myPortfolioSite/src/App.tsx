@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar/Navbar.tsx";
 function App() {
   return (
     <>
+        <h1>
+            Portfolio Site
+        </h1>
         <Navbar />
         <AppRoutes />
     </>
