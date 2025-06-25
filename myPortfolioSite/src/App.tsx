@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './App.css'
 import AppRoutes from './routes/appRoutes.tsx';
 import Navbar from './components/Navbar/Navbar.tsx';
+import DarkMode from "./components/Buttons/Toggle/DarkMode/DarkMode.tsx";
 
 function App() {
     useEffect(() => {
@@ -10,6 +11,7 @@ function App() {
 
     return (
         <div>
+            <DarkMode />
             <h1>Portfolio Site</h1>
             <Navbar />
             <AppRoutes />

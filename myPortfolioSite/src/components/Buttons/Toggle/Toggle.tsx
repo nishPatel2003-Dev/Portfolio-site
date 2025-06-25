@@ -17,11 +17,11 @@ const Toggle = (props: ToggleProps): JSX.Element => {
                 onClick={props.onToggle}
                 style={props.backgroundColor ? { backgroundColor: props.backgroundColor } : undefined}
             >
-                <div className="sliderThumb">
-                    {props.icon ?? (
-                        <div className="defaultIcon" />
-                    )}
-                </div>
+                {props.icon ? (
+                    <div className="iconWrapper">{props.icon}</div>
+                ) : (
+                    <div className="sliderThumb" />
+                )}
             </button>
         </div>
     );
