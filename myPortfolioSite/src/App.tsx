@@ -1,17 +1,20 @@
+import { useEffect } from 'react';
 import './App.css'
-import AppRoutes from "./routes/appRoutes.tsx";
-import Navbar from "./components/Navbar/Navbar.tsx";
+import AppRoutes from './routes/appRoutes.tsx';
+import Navbar from './components/Navbar/Navbar.tsx';
 
 function App() {
-  return (
-    <>
-        <h1>
-            Portfolio Site
-        </h1>
-        <Navbar />
-        <AppRoutes />
-    </>
-  )
+    useEffect(() => {
+        document.body.setAttribute('data-bs-theme', 'dark');
+    }, []);
+
+    return (
+        <div>
+            <h1>Portfolio Site</h1>
+            <Navbar />
+            <AppRoutes />
+        </div>
+    );
 }
 
-export default App
+export default App;
